@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.allininha.whatsapp.activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="163dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"
+        android:id="@+id/nome"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/textcolorPrimary"
+        android:layout_marginRight="15dp"/>
+    <EditText
+        android:layout_width="50dp"
+        android:textColor="@color/textcolorPrimary"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/ddi"
+        android:layout_marginLeft="15dp"
+        android:hint="+55"
+        android:layout_below="@+id/nome"/>
+
+    <EditText
+        android:id="@+id/ddd"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome"
+        android:textColor="@color/textcolorPrimary"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/ddi"
+        android:hint="11"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome"
+        android:layout_marginStart="28dp"
+        android:textColor="@color/textcolorPrimary"
+        android:layout_toEndOf="@+id/ddd"
+        android:layout_marginRight="15dp"
+        android:hint="9999999999999"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/cadastrarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ddi"
+        android:layout_below="@+id/ddi"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        android:text="CADASTRAR" />
+</RelativeLayout>

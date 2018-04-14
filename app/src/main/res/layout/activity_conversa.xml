@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.allininha.whatsapp.activity.ConversaActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+    <ListView
+        android:id="@+id/listViewConversas"
+        android:padding="8dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Mensagem"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:id="@+id/mensagem"
+            android:textColorHint="@android:color/black"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:id="@+id/bntEnviar"
+            android:theme="@style/botaoVerde"/>
+
+    </LinearLayout>
+</RelativeLayout>
